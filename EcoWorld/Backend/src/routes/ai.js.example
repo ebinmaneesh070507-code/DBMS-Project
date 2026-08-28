@@ -1,0 +1,25 @@
+// Example structure for future AI integration.
+//
+// Recommended architecture:
+//
+// Frontend
+//    |
+//    v
+// Express API  --->  Python ML service
+//    |                    |
+//    v                    v
+// MySQL              Model prediction
+//
+// Example response from the ML service:
+// {
+//   "category": "E-Waste",
+//   "confidence": 0.97,
+//   "recommendation": "Send to an authorized e-waste facility"
+// }
+//
+// You can later create:
+// POST /api/ai/classify
+//
+// Do not put the ML model directly inside Express unless you have a
+// specific reason to do so. A small Python FastAPI/Flask service is
+// easier for scikit-learn/PyTorch/TensorFlow models.
