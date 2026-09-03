@@ -1,0 +1,54 @@
+:root {
+  /* ---- Color: "bioluminescent night city" ---- */
+  --bg-void: #081310;
+  --bg-base: #0a1815;
+  --bg-surface: #0f211c;
+  --bg-surface-raised: #13291f;
+  --bg-surface-hover: #17301f;
+
+  --line-faint: rgba(150, 230, 200, 0.09);
+  --line-soft: rgba(150, 230, 200, 0.16);
+  --line-strong: rgba(150, 230, 200, 0.28);
+
+  --ink-primary: #eaf6ef;
+  --ink-secondary: #b6cdc3;
+  --ink-muted: #79988c;
+  --ink-faint: #4d655d;
+
+  --signal-mint: #49e6a6;
+  --signal-mint-dim: #2a8a67;
+  --signal-mint-bg: rgba(73, 230, 166, 0.1);
+  --signal-mint-bg-strong: rgba(73, 230, 166, 0.18);
+
+  --signal-amber: #f0a83e;
+  --signal-amber-bg: rgba(240, 168, 62, 0.12);
+
+  --signal-coral: #ff6f61;
+  --signal-coral-bg: rgba(255, 111, 97, 0.12);
+
+  --signal-azure: #4fb8e6;
+  --signal-azure-bg: rgba(79, 184, 230, 0.12);
+
+  --signal-violet: #a68cf0;
+  --signal-violet-bg: rgba(166, 140, 240, 0.12);
+
+  /* ---- Type ---- */
+  --font-display: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* ---- Radius & shadow ---- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.02) inset, 0 12px 28px -18px rgba(0, 0, 0, 0.65);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 20px 40px -16px rgba(0, 0, 0, 0.7);
+  --glow-mint: 0 0 0 1px rgba(73, 230, 166, 0.35), 0 0 24px -4px rgba(73, 230, 166, 0.45);
+
+  /* ---- Layout ---- */
+  --sidebar-w: 248px;
+  --topbar-h: 68px;
+  --content-max: 1280px;
+}
