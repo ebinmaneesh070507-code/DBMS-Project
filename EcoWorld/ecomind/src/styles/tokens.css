@@ -1,0 +1,77 @@
+:root {
+  /* ---- Color: "campus at night" — deep indigo/plum, not flat dark-grey ---- */
+  --bg-void: #090a18;
+  --bg-base: #0c0e1f;
+  --bg-plum: #1a1030;
+  --bg-surface: rgba(255, 255, 255, 0.045);
+  --bg-surface-raised: rgba(255, 255, 255, 0.075);
+  --bg-surface-hover: rgba(255, 255, 255, 0.105);
+
+  --line-faint: rgba(255, 255, 255, 0.075);
+  --line-soft: rgba(255, 255, 255, 0.13);
+  --line-strong: rgba(255, 255, 255, 0.26);
+
+  --ink-primary: #f6f4ff;
+  --ink-secondary: #c7c2e2;
+  --ink-muted: #8f89b3;
+  --ink-faint: #625c85;
+
+  /* Signal colors — richer & glowing instead of dull/muted.
+     Semantics kept from the original build so page code doesn't change:
+     mint = healthy/resolved/positive, amber = action/pending,
+     coral = urgent/critical, azure = informational, violet = AI. */
+  --signal-mint: #2dd4bf;
+  --signal-mint-dim: #1a9c8c;
+  --signal-mint-bg: rgba(45, 212, 191, 0.16);
+  --signal-mint-bg-strong: rgba(45, 212, 191, 0.26);
+
+  --signal-amber: #ffb648;
+  --signal-amber-dim: #b87f28;
+  --signal-amber-bg: rgba(255, 182, 72, 0.16);
+
+  --signal-coral: #ff5d5d;
+  --signal-coral-dim: #cc3f3f;
+  --signal-coral-bg: rgba(255, 93, 93, 0.16);
+
+  --signal-azure: #4fb8e6;
+  --signal-azure-dim: #2f8ab3;
+  --signal-azure-bg: rgba(79, 184, 230, 0.16);
+
+  --signal-violet: #8b7cf6;
+  --signal-violet-dim: #6558c9;
+  --signal-violet-bg: rgba(139, 124, 246, 0.18);
+
+  --glow-mint: 0 0 0 1px rgba(45, 212, 191, 0.4), 0 0 26px -4px rgba(45, 212, 191, 0.55);
+  --glow-amber: 0 0 0 1px rgba(255, 182, 72, 0.4), 0 0 26px -4px rgba(255, 182, 72, 0.55);
+  --glow-coral: 0 0 0 1px rgba(255, 93, 93, 0.45), 0 0 26px -4px rgba(255, 93, 93, 0.6);
+  --glow-violet: 0 0 0 1px rgba(139, 124, 246, 0.4), 0 0 26px -4px rgba(139, 124, 246, 0.55);
+
+  /* ---- Type ---- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* ---- Radius & shadow ---- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 16px 32px -20px rgba(0, 0, 0, 0.75);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 24px 48px -18px rgba(0, 0, 0, 0.8);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-med: 260ms;
+  --dur-slow: 420ms;
+
+  /* ---- Layout ---- */
+  --sidebar-w: 256px;
+  --topbar-h: 68px;
+  --content-max: 1320px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-med: 0ms; --dur-slow: 0ms; }
+}
